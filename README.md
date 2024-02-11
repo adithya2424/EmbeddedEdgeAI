@@ -1,4 +1,4 @@
-# **EmbeddedEdgeAI**
+# 🚀✨ **EmbeddedEdgeAI**: AI & Neural Networks Unleashed on Edge Devices 🧠💡🔩
 
 ## Welcome to the EmbeddedEdgeAI repository, where we focus on optimizing AI models for embedded and edge computing devices through advanced techniques.
 
@@ -46,8 +46,8 @@ This guide outlines a structured approach for implementing fine-grained pruning 
 Understanding your model's weight distribution is crucial before beginning the pruning process. This analysis helps identify layers that may be more amenable to pruning.
 
 - **Action:** Visualize the weight distribution across the model using the `plot_weight_distribution` function.
-  ![Weightdistribution](https://github.com/adithya2424/EmbeddedEdgeAI/assets/34277400/f2af6409-7d47-4ae4-b6da-65d83b997114)
-
+ ![Weightdistribution](https://github.com/adithya2424/EmbeddedEdgeAI/assets/34277400/9fd3769b-5db7-4aed-b3df-9479206ba9c0)
+ 
 ## Step 2: Perform Sensitivity Analysis
 
 Sensitivity analysis assesses the impact of varying levels of sparsity on different layers' performance, helping to identify how resilient each layer is to weight removal.
@@ -87,10 +87,15 @@ The following table compares the old (baseline) model, the pruned model, and the
 
 *Memory usage is calculated based on counting only the non-zero parameters to demonstrate the potential reduction in model complexity. Actual disk storage savings require a format that efficiently represents sparse matrices.*
 
-
 ## Contributing
 
 Contributions are warmly welcomed! If you have suggestions for improvements or ideas for new features, please feel free to submit an issue or a pull request. Your input is greatly valued as it helps make this project even better for everyone.
+
+## Acknowledgments
+
+This project incorporates code from the course "MIT 6.5940 EfficientML.ai," offered in Fall 2023. The course provided valuable insights and examples that have been adapted and used in this project. I extend my gratitude to the course instructors and MIT for making such resources available.
+
+For more information about the course and its materials, please visit [MIT 6.5940 EfficientML.ai Fall 2023](https://hanlab.mit.edu/courses/2023-fall-65940) or the course's direct link if available.
 
 
 
