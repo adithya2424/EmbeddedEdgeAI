@@ -93,7 +93,7 @@ Contributions are warmly welcomed! If you have suggestions for improvements or i
 
 ## Note:
 
-I will add support code for the deployment of these optimized models in STM32 NUCLEO L432KC board very soon. I am open to collaborate with fellow innovators.
+I will add support code for the deployment of these optimized models in STM32 NUCLEO boards very soon. I am open to collaborate with fellow innovators.
 
 ## Acknowledgments
 
