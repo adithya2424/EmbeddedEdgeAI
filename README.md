@@ -91,6 +91,10 @@ The following table compares the old (baseline) model, the pruned model, and the
 
 Contributions are warmly welcomed! If you have suggestions for improvements or ideas for new features, please feel free to submit an issue or a pull request. Your input is greatly valued as it helps make this project even better for everyone.
 
+## Note:
+
+I will add support code for the deployment of these optimized models in STM32 NUCLEO L432KC board very soon. I am open to collaborate with fellow innovators.
+
 ## Acknowledgments
 
 This project incorporates code from the course "MIT 6.5940 EfficientML.ai," offered in Fall 2023. The course provided valuable insights and examples that have been adapted and used in this project. I extend my gratitude to the course instructors and MIT for making such resources available.
