@@ -14,10 +14,11 @@ import math
 from pruning import FineGrainedPruner
 from model_metrics import *
 import copy
+from quantize import *
 
 def plot_sensitivity_scan(sparsities, accuracies, dense_model_accuracy):
     lower_bound_accuracy = 100 - (100 - dense_model_accuracy) * 1.5
-    fig, axes = plt.subplots(3, int(math.ceil(len(accuracies) / 3)), figsize=(15, 8))
+    fig, axes = plt.subplots(2, int(math.ceil(len(accuracies) / 3)), figsize=(15, 8))
     axes = axes.ravel()
     plot_index = 0
     for name, param in model.named_parameters():
@@ -53,7 +54,7 @@ def sensitivity_scan(model, dataloader, scan_step=0.1, scan_start=0.4, scan_end=
         accuracy = []
         for sparsity in tqdm(sparsities, desc=f'scanning {i_layer}/{len(named_conv_weights)} weight - {name}'):
             fine_grained_prune(param.detach(), sparsity=sparsity)
-            acc = test(None, model, test_loader, device)
+            acc = test(None, model, dataloader, device)
             if verbose:
                 print(f'\r    sparsity={sparsity:.2f}: accuracy={acc:.2f}%', end='')
             # restore
@@ -124,13 +125,13 @@ def test(args, model, test_loader, device):
             _, predicted = torch.max(outputs.data, 1)
             total += labels.size(0)
             correct += (predicted == labels).sum().item()
-    # print(f'Accuracy of the model on the test images: {100 * correct / total} %')
+    print(f'Accuracy of the model on the test images: {100 * correct / total} %')
     return 100 * correct / total
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Train or Test a Basic CNN on CIFAR-10')
-    parser.add_argument('--mode', type=str, choices=['train', 'test', 'sensitivity', 'param_distribution', 'print_weights', 'FineGrainedPruner', 'Finetune'], help='Mode: train or test')
+    parser.add_argument('--mode', type=str, choices=['train', 'test', 'sensitivity', 'param_distribution', 'print_weights', 'FineGrainedPruner', 'Finetune', 'Compare_models', 'quantize'], help='Mode: train or test')
     parser.add_argument('--batch-size', type=int, default=64,
                         help='input batch size for training/testing (default: 64)')
     parser.add_argument('--epochs', type=int, default=10, help='number of epochs to train (default: 10)')
@@ -153,7 +154,7 @@ if __name__ == '__main__':
     elif args.mode == 'test':
         model = BasicCNN(10).to(device)
         model.eval()
-        model.load_state_dict(torch.load('BasicCNN_model.pth'))
+        model.load_state_dict(torch.load('BasicCNN_Pruned_Finetuned_model.pth'))
         test_dataset = datasets.CIFAR10(root='./data', train=False, download=True, transform=transform)
         test_loader = DataLoader(test_dataset, batch_size=args.batch_size, shuffle=False)
         test(args, model, test_loader, device)
@@ -255,6 +256,43 @@ if __name__ == '__main__':
         sparse_model_accuracy = test(args, model, test_loader, device)
         print(f"Sparse model has accuracy={sparse_model_accuracy:.2f}% after fintuning")
         torch.save(model.state_dict(), 'BasicCNN_Pruned_Finetuned_model.pth')
+    elif args.mode == 'Compare_models':
+        test_dataset = datasets.CIFAR10(root='./data', train=False, download=True, transform=transform)
+        test_loader = DataLoader(test_dataset, batch_size=args.batch_size, shuffle=False)
+        model = BasicCNN(10).to(device)
+        model.eval()
+        model.load_state_dict(torch.load('BasicCNN_model.pth'))
+        dense_model_size = get_model_size(model)
+        print(f"Baseline model size={dense_model_size / MiB:.2f} MiB")
+        test(args, model, test_loader, device)
+        model.load_state_dict(torch.load('BasicCNN_Pruned_model.pth'))
+        pruned_model_size = get_model_size(model, count_nonzero_only=True)
+        print(f"Pruned model size={pruned_model_size / MiB:.2f} MiB")
+        test(args, model, test_loader, device)
+        model.load_state_dict(torch.load('BasicCNN_Pruned_Finetuned_model.pth'))
+        Finetuned_Pruned_model_size = get_model_size(model, count_nonzero_only=True)
+        print(f"Finetuned + Pruned model size={Finetuned_Pruned_model_size / MiB:.2f} MiB")
+        test(args, model, test_loader, device)
+    elif args.mode == "quantize":
+        print('Note that the storage for codebooks is ignored when calculating the model size.')
+        quantizers = dict()
+        test_dataset = datasets.CIFAR10(root='./data', train=False, download=True, transform=transform)
+        test_loader = DataLoader(test_dataset, batch_size=args.batch_size, shuffle=False)
+        for bitwidth in [8, 4, 2]:
+            model = BasicCNN(10).to(device)
+            model.eval()
+            model.load_state_dict(torch.load('BasicCNN_Pruned_Finetuned_model.pth'))
+            print(f'k-means quantizing model into {bitwidth} bits')
+            quantizer = KMeansQuantizer(model, bitwidth)
+            quantized_model_size = get_model_size(model, bitwidth)
+            print(f"    {bitwidth}-bit k-means quantized model has size={quantized_model_size / MiB:.2f} MiB")
+            quantized_model_accuracy = test(args, model, test_loader, device)
+            print(f"    {bitwidth}-bit k-means quantized model has accuracy={quantized_model_accuracy:.2f}%")
+            quantizers[bitwidth] = quantizer
+
+
+
+
 
 
 

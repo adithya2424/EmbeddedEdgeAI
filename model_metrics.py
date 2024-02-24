@@ -65,7 +65,7 @@ def get_model_size(model: nn.Module, data_width=32, count_nonzero_only=False) ->
 
 
 def plot_weight_distribution(model, bins=256, count_nonzero_only=False):
-    fig, axes = plt.subplots(3,2, figsize=(10, 6))
+    fig, axes = plt.subplots(2,2, figsize=(10, 6))
     axes = axes.ravel()
     plot_index = 0
     for name, param in model.named_parameters():
