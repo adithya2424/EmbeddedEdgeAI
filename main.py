@@ -142,6 +142,7 @@ if __name__ == '__main__':
         transforms.ToTensor(),
         transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
     ])
+    args.mode = 'quantize'
     if args.mode == 'train':
         dataset = datasets.CIFAR10(root='./data', train=True, download=True, transform=transform)
         train_size = int(0.8 * len(dataset))
@@ -281,7 +282,7 @@ if __name__ == '__main__':
         for bitwidth in [8, 4, 2]:
             model = BasicCNN(10).to(device)
             model.eval()
-            model.load_state_dict(torch.load('BasicCNN_Pruned_Finetuned_model.pth'))
+            model.load_state_dict(torch.load('models/BasicCNN_Pruned_Finetuned_model.pth'))
             print(f'k-means quantizing model into {bitwidth} bits')
             quantizer = KMeansQuantizer(model, bitwidth)
             quantized_model_size = get_model_size(model, bitwidth)
