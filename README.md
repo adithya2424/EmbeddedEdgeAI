@@ -7,6 +7,15 @@
 - [Optimization Algorithms](Optimization-Algorithms.md) - Explore our detailed experiments and guides on optimization algorithms such as model pruning, quantization, knowledge distillation
 - [Demos](Demos.md) - See the models in action with demos and example applications.
 
+### Installation
+
+Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/adithya2424/EmbeddedEdgeAI.git
+cd EmbeddedEdgeAI
+```
+
 ## Contributing
 
 Contributions are warmly welcomed! If you have suggestions for improvements or ideas for new features, please feel free to submit an issue or a pull request. Your input is greatly valued as it helps make this project even better for everyone.
