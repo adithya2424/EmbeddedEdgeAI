@@ -5,7 +5,7 @@
 ## Quick Links
 
 - [Optimization Algorithms](Optimization-Algorithms.md) - Explore our detailed experiments and guides on optimization algorithms such as model pruning, quantization, knowledge distillation
-- [Demos on ARM Cortex-M Series](Demos.md) - See the models in action with demos and example applications.
+- [Demos on ARM Cortex-M Series](Demos.md) - Witness the thrilling execution of our models on ARM Cortex M4 based devices in real-time.
 
 ### Installation
 
