@@ -213,7 +213,7 @@ UART2 is enabled by default which can be used to print Inference Time, Classific
 
 ## Live Demo in Nucleo L476RG board [ Airplane, Automobile ]
 
-https://github.com/adithya2424/EmbeddedEdgeAI/assets/34277400/bdd2cf1b-0c69-44d2-837e-2dbad711d9f9
+https://github.com/adithya2424/EmbeddedEdgeAI/assets/34277400/0aa1729b-e59d-43d2-848f-931b2dcf5c34
 
 ## Final Remarks
 
