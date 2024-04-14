@@ -10,7 +10,7 @@ In this project, we train a simple model using CIFAR-10 dataset and integrate it
 
 Before you begin, ensure you have the following tools and libraries installed:
 - STM32CubeIDE (for firmware flashing)
-- Google Colab
+- Google Colab example provided by TVM:(https://colab.research.google.com/github/apache/tvm-site/blob/asf-site/docs/_downloads/1f4943aed1aa607b2775c18b1d71db10/from_pytorch.ipynb)
 
 ## Model Definition in PyTorch
 
