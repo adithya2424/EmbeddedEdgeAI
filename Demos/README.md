@@ -215,7 +215,13 @@ https://github.com/adithya2424/EmbeddedEdgeAI/assets/34277400/7955ee71-ddac-4130
 
 ## Final Remarks
 
-The testcnn.zip file contains the complete project directory integrated into STM32 Cube IDE environment. If you would like to add more sample data to test in the existing project strcuture please use the Linker script and map the new sample data to RAM2. 
+The testcnn.zip file includes the entire project directory, set up for use in the STM32 Cube IDE environment. To incorporate additional sample data into the current project structure, utilize the Linker script to allocate the new sample data to RAM2.
+
+
+Crafted with love ❤️ and passion for the Embedded Edge AI. Let's innovate together! 🚀✨
+
+
+
 
 
 
