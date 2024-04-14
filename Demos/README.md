@@ -213,6 +213,10 @@ UART2 is enabled by default which can be used to print Inference Time, Classific
 ## Live Demo in Nucleo L476RG board [ Airplane, Automobile ]
 https://github.com/adithya2424/EmbeddedEdgeAI/assets/34277400/7955ee71-ddac-4130-a40c-cf713305c8b2
 
+## Final Remarks
+
+The testcnn.zip file contains the complete project directory integrated into STM32 Cube IDE environment. If you would like to add more sample data to test in the existing project strcuture please use the Linker script and map the new sample data to RAM2. 
+
 
 
 
