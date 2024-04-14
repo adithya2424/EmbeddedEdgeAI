@@ -198,6 +198,18 @@ with tarfile.open(TAR_PATH, mode="a") as tar_file:
   # Create file name including the class name and index
   file_name = "sample_0"
   create_header_file(file_name, np.asarray(img), SAMPLES_DIR, tar_file)
+```
+## Integrate the model.tar file into your custom IDE provided by microTVM
+
+Please follow the instructions provided by TVM for this step:
+(https://tvm.apache.org/docs/how_to/work_with_microtvm/micro_custom_ide.html)
+
+
+
+
+
+
+
 
 
 
