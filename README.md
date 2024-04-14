@@ -30,6 +30,11 @@ This project incorporates code from the course "MIT 6.5940 EfficientML.ai," offe
 
 For more information about the course and its materials, please visit [MIT 6.5940 EfficientML.ai Fall 2023](https://hanlab.mit.edu/courses/2023-fall-65940) or the course's direct link if available.
 
+## Final Remarks
+
+Crafted with love ❤️ and passion for the Embedded Edge AI. Let's innovate together! 🚀✨
+
+
 
 
 
