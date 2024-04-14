@@ -5,10 +5,14 @@
 ## Quick Links
 
 - [Optimization Algorithms](OptimizationAlgorithms.md) - Explore our detailed experiments and guides on optimization algorithms such as model pruning, quantization, knowledge distillation
+  
   ![Weightdistribution](https://github.com/adithya2424/EmbeddedEdgeAI/assets/34277400/9fd3769b-5db7-4aed-b3df-9479206ba9c0)
+
   
 - [Demos on ARM Cortex-M Series](/Demos/) - Witness the thrilling execution of our models on ARM Cortex M4 based devices in real-time.
+  
   <img width="752" alt="Screenshot 2024-04-13 at 9 16 27 PM" src="https://github.com/adithya2424/EmbeddedEdgeAI/assets/34277400/dca384c8-c178-4f7c-84dd-647142a46c2e">
+
 
 ### Installation
 
