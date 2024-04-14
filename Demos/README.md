@@ -1,7 +1,5 @@
 # microTVM with PyTorch on STM32 Nucleo L476RG
 
-<img width="752" alt="Screenshot 2024-04-13 at 9 16 27 PM" src="https://github.com/adithya2424/EmbeddedEdgeAI/assets/34277400/dca384c8-c178-4f7c-84dd-647142a46c2e">
-
 Welcome to this comprehensive demo where we showcase how to deploy a simple PyTorch model onto an STM32 Nucleo L476RG board using microTVM. This guide will cover everything from the initial model setup in PyTorch to the final deployment on the microcontroller.
 
 ## Project Overview
