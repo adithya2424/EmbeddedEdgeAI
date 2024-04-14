@@ -22,7 +22,7 @@ Contributions are warmly welcomed! If you have suggestions for improvements or i
 
 ## Note:
 
-I will add support code for the deployment of these optimized models in STM32 NUCLEO boards very soon. I am open to collaborate with fellow innovators.
+I will include support code for deploying these optimized models on ARM Cortex M series and eventually with A series.
 
 ## Acknowledgments
 
