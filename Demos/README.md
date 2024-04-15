@@ -205,7 +205,7 @@ with tarfile.open(TAR_PATH, mode="a") as tar_file:
 Please follow the instructions provided by TVM for this step:
 (https://tvm.apache.org/docs/how_to/work_with_microtvm/micro_custom_ide.html)
 
-## STM32 CUbe IDE 
+## STM32 Cube IDE 
 
 UART2 is enabled by default which can be used to print Inference Time, Classification Results
 
