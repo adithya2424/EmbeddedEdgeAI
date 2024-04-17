@@ -14,7 +14,7 @@
   <img width="752" alt="Screenshot 2024-04-13 at 9 16 27 PM" src="https://github.com/adithya2424/EmbeddedEdgeAI/assets/34277400/dca384c8-c178-4f7c-84dd-647142a46c2e">
 
 
-### Installation
+## Installation
 
 Clone the repository to your local machine:
 
