@@ -31,12 +31,6 @@ Contributions are warmly welcomed! If you have suggestions for improvements or i
 
 I will include support code for deploying these optimized models on ARM Cortex M series and eventually with A series.
 
-## Acknowledgments
-
-This project incorporates code from the course "MIT 6.5940 EfficientML.ai," offered in Fall 2023. The course provided valuable insights and examples that have been adapted and used in this project. I extend my gratitude to the course instructors and MIT for making such resources available.
-
-For more information about the course and its materials, please visit [MIT 6.5940 EfficientML.ai Fall 2023](https://hanlab.mit.edu/courses/2023-fall-65940) or the course's direct link if available.
-
 ## Final Remarks
 
 Crafted with love ❤️ and passion for the Embedded Edge AI. Let's innovate together! 🚀✨
