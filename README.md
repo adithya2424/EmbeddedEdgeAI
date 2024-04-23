@@ -29,7 +29,7 @@ Contributions are warmly welcomed! If you have suggestions for improvements or i
 
 ## Note:
 
-I will include support code for deploying these optimized models on ARM Cortex M series and eventually with A series.
+I will include support code for deploying these optimized models on ARM A series very soon.
 
 ## Final Remarks
 
