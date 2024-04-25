@@ -207,7 +207,7 @@ Please follow the instructions provided by TVM for this step:
 
 ## STM32 Cube IDE 
 
-UART2 is enabled by default which can be used to print Inference Time, Classification Results
+UART2 is enabled by default which can be used to print Inference Time and Classification Results
 
 <img width="652" alt="Screenshot 2024-04-13 at 7 56 50 PM" src="https://github.com/adithya2424/EmbeddedEdgeAI/assets/34277400/e9eb72b5-7f60-47d9-9384-a58575a90135">
 
