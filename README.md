@@ -14,7 +14,7 @@
 
 - [Demo on ARM Cortex-A Series](/Demos/BBB_Yocto) - Witness the thrilling execution of our models on ARM Cortex A series devices in real-time.
 
-  <img width="1530" alt="Screenshot 2024-05-05 at 9 16 08 PM" src="https://github.com/adithya2424/EmbeddedEdgeAI/assets/34277400/7cff552e-e405-4865-89c4-46d7a391c700">
+  <img width="1491" alt="Screenshot 2024-05-06 at 11 43 11 AM" src="https://github.com/adithya2424/EmbeddedEdgeAI/assets/34277400/6e40ba63-0e71-46e0-9668-e3d3a804c614">
 
 ## Installation
 
