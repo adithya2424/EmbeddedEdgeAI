@@ -13,9 +13,10 @@
   <img width="752" alt="Screenshot 2024-04-13 at 9 16 27 PM" src="https://github.com/adithya2424/EmbeddedEdgeAI/assets/34277400/dca384c8-c178-4f7c-84dd-647142a46c2e">
 
 - [Demo on ARM Cortex-A Series](/Demos/BBB_Yocto) - Witness the thrilling execution of our models on ARM Cortex A series devices in real-time.
- 
-  ![a](https://github.com/adithya2424/EmbeddedEdgeAI/assets/34277400/7f2d6c71-2fcb-4905-bd72-a440b862d9c1)
+  
+  <img width="765" alt="Screenshot 2024-05-06 at 1 44 10 PM" src="https://github.com/adithya2424/EmbeddedEdgeAI/assets/34277400/143bca27-0566-4ff2-abc8-9cb4ac13673a">
 
+  
 ## Installation
 
 Clone the repository to your local machine:
