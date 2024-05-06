@@ -8,11 +8,13 @@
   
   ![Weightdistribution](https://github.com/adithya2424/EmbeddedEdgeAI/assets/34277400/9fd3769b-5db7-4aed-b3df-9479206ba9c0)
 
-  
-- [Demos on ARM Cortex-M Series](/Demos/) - Witness the thrilling execution of our models on ARM Cortex M4 based devices in real-time.
+- [Demo on ARM Cortex-M Series](/Demos/) - Witness the thrilling execution of our models on ARM Cortex M4 based devices in real-time.
   
   <img width="752" alt="Screenshot 2024-04-13 at 9 16 27 PM" src="https://github.com/adithya2424/EmbeddedEdgeAI/assets/34277400/dca384c8-c178-4f7c-84dd-647142a46c2e">
 
+- [Demo on ARM Cortex-A Series](/Demos/BBB_Yocto) - Witness the thrilling execution of our models on ARM Cortex A series devices in real-time.
+
+  <img width="1530" alt="Screenshot 2024-05-05 at 9 16 08 PM" src="https://github.com/adithya2424/EmbeddedEdgeAI/assets/34277400/7cff552e-e405-4865-89c4-46d7a391c700">
 
 ## Installation
 
