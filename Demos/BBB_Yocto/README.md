@@ -13,7 +13,7 @@ More info on Yocto is available at: https://www.yoctoproject.org
 Please follow the steps in below guide to create a customized image for BBB, we have meta layer which includes GStreamer framework.
 [ https://medium.com/swlh/build-and-use-gstreamer-with-yocto-project-and-beaglebone-black-217d6822476d ]
 
-Make sure to relax, make some memories and get back to this once you have built your image beacuse the bitbake takes a lot of time depending on the system resources.
+Make sure to relax, make some memories and get back to this once you have built your image because the bitbake takes a lot of time depending on the system resources.
 
 ### Understanding the .wic files and the boot process 
 
