@@ -1,4 +1,4 @@
-# 🚀✨ **EmbeddedEdgeAI**: Neural Networks Unleashed on Edge Devices 🧠[🔲]⚡️
+# 🚀✨ **EmbeddedEdgeAI**: Neural Networks Unleashed on Edge Devices⚡️
 
 ## Welcome to the EmbeddedEdgeAI repository, where we focus on optimizing AI models for embedded and edge computing devices through advanced techniques.
 
